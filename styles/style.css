@@ -62,6 +62,20 @@
   padding: 0;
 }
 
+.main-text-h2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.main-text-h3 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin: 0;
+}
+
 .header__title {
   max-width: 730px;
   height: 100%;
@@ -123,11 +137,6 @@
 
 .digits {
   margin: 100px auto;
-
-}
-
-.digits__color-dark {
-  color: black;
 }
 
 .digits__section-title-header {
@@ -139,20 +148,14 @@
 }
 
 .digits__section-title {
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
   margin: 0 auto 20px;
 }
 
 .digits__section-subtitle {
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-  margin: 0;
+
 }
 
-.digits__table {
+.table {
   width: 1100px;
   display: flex;
   align-items: flex-start;
@@ -162,13 +165,13 @@
 
 }
 
-.digits__cell {
+.table__cell {
   width: 250px;
   margin-bottom: 60px;
 
 }
 
-.digits__heading {
+.table__heading {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
@@ -176,9 +179,13 @@
   margin-bottom: 20px;
 }
 
-.digits__text {
+.table__text {
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
   margin: 0;
+}
+
+.table__text-sign {
+  margin-top: 20px;
 }
