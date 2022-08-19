@@ -102,6 +102,10 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  color: #0f19ad;
+}
+
 .description__content {
   margin: 100px auto;
   width: 80%;
@@ -229,6 +233,10 @@
   color: #2f80ed;
 }
 
+.feynman__link:hover {
+  color: #0f19ad;
+}
+
 .feynman__img {
   width: 867px;
   height: 637px;
@@ -318,8 +326,13 @@
 .footer__column-heading {
   font-size: 18px;
   font-weight: 600;
-  line-height: 0;
+  margin: 0;
   margin-bottom: 20px;
+}
+
+.footer__column-nav {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column-link {
@@ -327,14 +340,25 @@
   line-height: 30px;
   text-decoration: none;
   color: white;
+  margin: 0;
 }
 
-
+.footer__column-link:hover {
+  color: #2f80ed;
+}
 
 .footer__autor {
+  position: relative;
+  height: 150px;
+  margin: 18px 0;
+}
+
+.footer__autor_content {
   font-size: 18px;
   line-height: 25px;
-  margin: 18px 0;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
 }
 
 .footer__social-icon {
