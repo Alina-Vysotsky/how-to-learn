@@ -58,7 +58,6 @@
   margin: 0;
   margin-left: 64px;
   max-width: 730px;
-  height: 100%;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
@@ -93,6 +92,7 @@
 
 .two-columns__brief {
   width: 175px;
+  margin: 0;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
@@ -106,6 +106,7 @@
 
 .two-columns__paragraph {
   margin-top: 0;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 34px;
 }
@@ -122,7 +123,9 @@
   margin: 100px auto 40px;
 }
 
-.digits__section-title {
+.section-title {
+  position: relative;
+  z-index: 3;
   margin: 0 auto 20px;
   width: 60%;
   font-size: 60px;
@@ -131,7 +134,9 @@
   text-align: center;
 }
 
-.digits__section-subtitle {
+.section-subtitle {
+  position: relative;
+  z-index: 3;
   margin: 0 auto;
   width: 60%;
   font-size: 24px;
@@ -170,18 +175,22 @@
   line-height: 1.2;
 }
 
+.table__text:last-of-type {
+  margin-bottom: 0;
+}
+
 .feynman {
   position: relative;
+  min-height: 890px;
   margin: 0;
   background-color: #f2f2f2;
 }
-
 
 .feynman__title {
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 100px;
   width: 648px;
   font-size: 120px;
   font-weight: 600;
@@ -192,9 +201,7 @@
 .feynman__subtitle {
   position: relative;
   z-index: 1;
-  margin-top: 47px;
-  margin-bottom: 0;
-  padding-bottom: 400px;
+  margin-top: 70px;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
@@ -232,11 +239,17 @@
   margin: 0 auto;
   padding-top: 90px;
   background-color: #1f1f1f;
+}
+
+.section-title_theme_dark {
   color: white;
 }
 
+.section-subtitle_theme_dark {
+  color: white;
+}
 
-.table__theme_dark {
+.table_theme_dark {
   margin: 80px auto 10px;
 }
 
@@ -247,11 +260,13 @@
 .table__cell_theme_dark {
   margin-bottom: 0;
   width: 200px;
+  color: white;
 }
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   object-fit: cover;
+  background-size: contain;
   position: absolute;
   right: -210px;
   top: 0;
@@ -261,8 +276,9 @@
 
 .footer {
   display: flex;
-  min-width: 350px;
+  min-height: 350px;
   padding: 60px 0 40px;
+  box-sizing: border-box;
   margin: 0;
   background-color: #1f1f1f;
   color: white;
@@ -282,14 +298,6 @@
   flex-basis: 711px;
 }
 
-.footer__column_content_info {
-  flex-direction: column;
-}
-
-.footer__column_content_social {
-  flex-direction: column;
-}
-
 .footer__column-links {
   display: flex;
   flex-direction: column;
@@ -300,6 +308,7 @@
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 600;
+  line-height: 30px;
 }
 
 .footer__column-link {
