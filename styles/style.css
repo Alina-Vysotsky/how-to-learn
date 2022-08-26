@@ -10,6 +10,8 @@
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   height: 100vh;
   min-height: 600px;
@@ -58,7 +60,6 @@
   margin: 0;
   margin-left: 64px;
   max-width: 730px;
-  height: 100%;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
@@ -121,7 +122,7 @@
 }
 
 .digits {
-  margin: 100px auto 40px;
+  margin: 100px auto;
 }
 
 .section-title {
@@ -153,13 +154,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 60px auto 40px;
+  margin: 0 auto;
   width: 1100px;
 }
 
 .table__cell {
   width: 250px;
-  margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 .table__heading {
@@ -184,6 +185,7 @@
   position: relative;
   min-height: 890px;
   margin: 0;
+  padding-top: 100px;
   background-color: #f2f2f2;
 }
 
@@ -191,7 +193,6 @@
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  padding-top: 100px;
   width: 648px;
   font-size: 120px;
   font-weight: 600;
@@ -203,6 +204,7 @@
   position: relative;
   z-index: 1;
   margin-top: 70px;
+  margin-bottom: 0;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
@@ -238,7 +240,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  padding-top: 90px;
+  padding: 90px 0;
   background-color: #1f1f1f;
 }
 
@@ -251,15 +253,11 @@
 }
 
 .table_theme_dark {
-  margin: 80px auto 10px;
-}
-
-.table__text_theme_dark {
-  margin: 0 0 80px;
+  margin: 0 auto;
 }
 
 .table__cell_theme_dark {
-  margin-bottom: 0;
+  margin-top: 80px;
   width: 200px;
   color: white;
 }
