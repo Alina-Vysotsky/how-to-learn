@@ -17,6 +17,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -31,6 +32,12 @@
   left: 64px;
 }
 
+
+@keyframes rotation {
+  100% {transform: rotate(360deg);}
+}
+
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
@@ -39,6 +46,7 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
+  animation: rotation 20s infinite linear;
 }
 
 .header__main-illustration {
@@ -79,6 +87,7 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: color 0.4s;
 }
 
 .header__link:hover {
@@ -86,11 +95,10 @@
 }
 
 .description {
-  display: flex;
-  justify-content: space-between;
-  margin: 100px auto;
-  width: 80%;
+  margin: 100px 0 0;
 }
+
+
 
 .two-columns__brief {
   width: 175px;
@@ -182,13 +190,13 @@
 }
 
 .techniques {
-  margin: 100px auto;
+  margin: 100px auto 40px;
   width: 80%;
 }
 
 .cards {
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: flex-start;
   margin: 0 auto;
@@ -198,25 +206,23 @@ flex-wrap: wrap;
 .cards__item {
   display: inline-flex;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
   padding-right: 100px;
 
   position: relative;
   z-index: 1;
-width: 240px;
+  width: 240px;
 }
 
 .cards__item:nth-child(3n+3) {
   padding-right: 0;
 }
 
-
-
 .cards__image {
- width: 160px;
- height: 160px;
- border-radius: 160px;
- margin-top: 60px;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  margin-top: 60px;
 }
 
 .cards__title {
@@ -233,18 +239,40 @@ width: 240px;
   line-height: 23px;
   font-weight: normal;
   padding-top: 16px;
-text-align: center;
-margin: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.video {
+
+  position: relative;
+  top: 60px;
+  z-index: 2;
+}
+
+.video__iframes {
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.video__iframe {
+  margin: 0 10px;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
 }
 
 
+.oakley {
+  padding-top: 160px;
 
 
-
-
-
-
-
+  background-color: #f2f2f2;
+}
 
 .feynman {
   position: relative;
@@ -287,6 +315,7 @@ margin: 0;
   line-height: 51px;
   text-decoration: none;
   color: #2f80ed;
+  transition: color 0.4s;
 }
 
 .feynman__link:hover {
@@ -299,6 +328,84 @@ margin: 0;
   left: 0;
   width: 867px;
   height: 637px;
+}
+
+
+.khan {
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+
+.khan__author {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin: 0;
+}
+
+.khan__quote {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 0;
+  padding: 50px 0 36px;
+  width: 790px;
+}
+
+.khan__quote-author {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.khan__quote-author-subline {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 68px;
+}
+
+.khan__book-container {
+  display: flex;
+  justify-self: start;
+}
+
+.khan__book-pic {
+  width: 608px;
+  height: 620px;
+  margin-right: 48px;
+  object-fit: cover;
+  background-size: contain;
+  object-position: left top;
+}
+
+.khan__buy-link {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  margin: 0;
+  transition: color 0.4s;
+}
+
+.khan__buy-link:hover {
+  color: #0f19ad;
 }
 
 .kaufman {
@@ -336,6 +443,7 @@ margin: 0;
   top: 0;
   width: 877px;
   height: 877px;
+  animation: rotation 20s infinite linear;
 }
 
 .resources {
@@ -361,26 +469,6 @@ margin: 0;
 .resources__link:hover {
   opacity: 0.5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
   display: flex;
@@ -425,6 +513,7 @@ margin: 0;
   line-height: 30px;
   text-decoration: none;
   color: white;
+  transition: color 0.4s;
 }
 
 .footer__column-link:hover {
